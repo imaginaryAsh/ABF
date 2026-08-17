@@ -73,5 +73,14 @@
     <script src="details-toggle.js"></script>
     <script src="trash.js"></script>
     <script src="context-menu.js"></script>
+
+    <script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./service-worker.js");
+  });
+}
+</script>
+    
   </body>
 </html>
