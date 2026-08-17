@@ -1,0 +1,46 @@
+.workspace-nav-divider { height: 1px; margin: 18px 10px 12px; background: #dde1d7; }
+.app-shell:not(.workspace-mode) .workspace-nav-divider, .app-shell:not(.workspace-mode) .workspace-nav { display:none; }
+.app-side-panel, .browser-side-panel { display:none; margin-top:24px; }
+.apps-active .workspace-nav-divider, .browser-active .workspace-nav-divider, .apps-active .workspace-nav, .browser-active .workspace-nav { display:none; }
+.apps-active .app-side-panel, .browser-active .browser-side-panel { display:block; }
+.side-panel-label { color:#969d91; font-size:10px; font-weight:700; letter-spacing:.1em; margin:0 10px 9px; }
+.installed-label-side { margin-top:25px; }
+.side-main-link, .side-list button { width:100%; display:flex; align-items:center; gap:10px; border:0; background:transparent; color:#5c6559; padding:9px 10px; border-radius:7px; text-align:left; cursor:pointer; font-size:12px; }
+.side-main-link:hover, .side-list button:hover { background:#e6e9df; color:var(--ink); }
+.side-main-link { font-weight:600; }
+.side-list { display:grid; gap:2px; }
+.side-list button i { width:19px; height:19px; display:grid; place-items:center; border-radius:5px; font-style:normal; font-size:10px; }
+.side-list p { color:#8b9288; font-size:11px; padding:2px 10px; margin:0; }
+.workspace-panel { display: none; }
+.workspace-panel.is-open { display: block; }
+.main.workspace-active > :not(.topbar):not(.workspace-panel) { display: none; }
+.workspace-hero { display: flex; align-items: end; justify-content: space-between; margin: 37px 0 24px; }
+.workspace-hero h1 { margin: 0; }
+.workspace-hero p { margin: 7px 0 0; color: var(--muted); }
+.workspace-hero button, .app-card button, .browser-toolbar button { border: 0; border-radius: 8px; padding: 10px 13px; background: var(--ink); color: white; font-weight: 600; font-size: 12px; cursor: pointer; }
+.workspace-section-title { display:flex; justify-content:space-between; align-items:center; margin: 27px 0 13px; }
+.workspace-section-title h2 { font-size: 14px; margin:0; }
+.workspace-section-title span { color: var(--muted); font-size: 11px; }
+.installed-apps, .app-catalog { display:grid; grid-template-columns:repeat(auto-fill,minmax(175px,1fr)); gap:13px; }
+.app-card { position:relative; background:white; border:1px solid var(--line); border-radius:11px; padding:16px; min-height:152px; }
+.app-card .app-icon { width:39px; height:39px; border-radius:10px; display:grid; place-items:center; font-weight:700; font-size:17px; color:#26311b; }
+.app-card h3 { font-size:13px; margin:13px 0 4px; }
+.app-card p { color:var(--muted); font-size:11px; line-height:1.45; min-height:31px; margin:0 0 12px; }
+.app-card .uninstall { background:transparent; color:#7e857c; padding:0; position:absolute; right:12px; top:12px; font-size:17px; }
+.app-card .install { background:#edf2e3; color:#4c5e18; }
+.app-card .installed-label { color:#66780f; font-size:11px; font-weight:700; }
+.browser-shell { background:white; border:1px solid var(--line); border-radius:12px; overflow:hidden; min-height:540px; }
+.browser-toolbar { display:flex; align-items:center; gap:8px; padding:10px; background:#f5f6f1; border-bottom:1px solid var(--line); }
+.browser-dots { color:#a7ada2; letter-spacing:2px; font-size:14px; }
+.browser-toolbar input { flex:1; min-width:0; border:1px solid #dde1d8; border-radius:7px; padding:9px 11px; outline-color:#a6bd30; font-size:12px; }
+.browser-toolbar button { padding:9px 12px; }
+.browser-content { position:relative; height:480px; background:#fbfbf8; }
+.browser-content iframe { width:100%; height:100%; border:0; background:white; }
+.browser-welcome { display:grid; place-items:center; align-content:center; height:100%; text-align:center; color:var(--muted); padding:30px; }
+.browser-welcome .compass { width:54px; height:54px; display:grid; place-items:center; border-radius:50%; background:var(--lime); color:var(--ink); font-size:25px; margin-bottom:15px; }
+.browser-welcome h2 { margin:0 0 8px; color:var(--ink); font:700 25px 'Playfair Display',serif; }
+.browser-welcome p { margin:0; font-size:12px; max-width:290px; line-height:1.5; }
+.browser-footer { padding:10px 14px; color:var(--muted); font-size:11px; border-top:1px solid var(--line); display:flex; justify-content:space-between; gap:12px; }
+.browser-footer a { color:#5d7315; font-weight:600; }
+.launch-name { font-size:11px; color:var(--muted); }
+@media(max-width:700px){.workspace-hero{margin-top:28px;align-items:start;gap:15px}.workspace-hero button{white-space:nowrap}.installed-apps,.app-catalog{grid-template-columns:repeat(2,1fr)}.browser-shell{min-height:430px}.browser-content{height:370px}.browser-footer{display:block}.browser-footer a{display:inline-block;margin-top:6px}}

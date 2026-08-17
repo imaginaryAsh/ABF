@@ -1,0 +1,6 @@
+.details-toggle { display:inline-flex; align-items:center; gap:6px; height:35px; padding:0 10px; border:1px solid var(--line); border-radius:8px; background:#fff; color:#5e6858; font-size:12px; font-weight:600; cursor:pointer; }
+.app-shell.details-hidden { grid-template-columns:244px minmax(0,1fr); }
+.app-shell.home-mode.details-hidden, .app-shell.settings-mode.details-hidden { grid-template-columns:minmax(0,1fr); }
+.app-shell.details-hidden .details-panel { display:none; }
+.home-mode #detailsToggle, .settings-mode #detailsToggle { display:none; }
+@media(max-width:1050px){.app-shell.details-hidden{grid-template-columns:215px minmax(0,1fr)}}

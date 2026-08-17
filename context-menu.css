@@ -1,0 +1,6 @@
+.abf-context-menu { position:fixed; z-index:30; min-width:164px; padding:6px; border:1px solid var(--line); background:#fff; border-radius:10px; box-shadow:0 14px 35px #26341424; }
+.abf-context-menu[hidden] { display:none; }
+.abf-context-menu button { width:100%; display:flex; align-items:center; gap:9px; border:0; background:transparent; color:#4f5a4d; border-radius:6px; padding:8px 9px; text-align:left; font-size:12px; cursor:pointer; }
+.abf-context-menu button:hover { background:#eef1e8; color:var(--ink); }
+.abf-context-menu button.danger { color:#ae5049; }.abf-context-menu hr { margin:5px 3px; border:0; border-top:1px solid var(--line); }
+.file-card, .folder-card { -webkit-touch-callout:none; }
